@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+    border-top: 1px solid blue;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    margin: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 257px;
+    width: 700px;
+}
+
+.box-5 {
+    grid-column-end: 2 span;
+}
+
+
+.box {
+    background-color: rgba(211, 95, 12, 0.926);
+    color: white;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    width: 10rem;
+}
+
+.logo {
+    text-align: end;
+}
+
+.box2 {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(228, 228, 136);
+}
+
+p{
+    border:3px black dotted;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.pic {
+    text-align: center;
+}
+
+@media (min-width:360px) and (max-width:480px) {
+    .container {
+        display: flex;
+        flex-flow: column-reverse;
+        margin: 2rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 257px;
+        width: 350px;
+    }
+    
+    .box-5 {
+        grid-column-end: 2 span;
+    }
+    
+    
+    .box {
+        background-color: rgba(211, 95, 12, 0.926);
+        color: white;
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 2rem;
+        text-align: center;
+        width: 5rem;
+    }
+
+    .box2 {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    p{
+        border:3px black dotted;
+    }
+    
+    .box3 {
+        display: flex;
+        align-items: center;
+        flex-flow: column-reverse;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        color: white;
+    }
+    
+    .pic {
+        text-align: center;
+    }
+}
